@@ -1,0 +1,55 @@
+EITHA/31.07.2024
+------------------------------------------------------------------------------------------------------------
+FOR Å KUNNE KJØRE FILEN MÅ DU HA TO TING
+      Tilgang til SFOS-OFFICE 365 supergruppen
+      Mulighet til å kjøre macroer
+            Dette fås fra STAF, 
+                ta kontakt med Kjartan eller nærmeste leder (som trolig vil sende deg til Kjartan) for å få dette
+
+Du finner de relevante filene i teamet
+      Dokumenter>General>Kart
+          Oppdatering av kart med tekstbokser.xlsm
+          Kart Oslo_Viken m tekstbokser.pptx
+
+Filen har fem faner
+    "Farger"                 -  Lister over alle fargene, RGB verdoer og en nummerering av disse
+    "Input 3" og "Input 5"   -  Kommunenivå med henholdsvis 3 og 5 forskjellige farger
+    "Fylker 3" og "Fylker 5" -  Fylkesnivå med henholdsvis 3 og 5 forskjellige farger
+
+    Input og Fylker fanene fungerer essensielt på samme måte.
+        Forskjellen er antall farger og om det er kommuner eller fylker som skal oppdaterteres.
+------------------------------------------------------------------------------------------------------------
+Oprettelse av kart
+  Legg inn bakgrunnstall
+    Finn verdienene for kommunene. Her kan du hente inn tall fra Udir.no eller legge inn egne tall
+    Sorter disse alfabetisk og ha dem vertikalt
+    Kopier verdiene
+         Hvis ikke alle kommunene ligger inne så du passe på at korrekte verdier blir lagt på rett kommune
+         Tomme verdier vil få hvite felt.
+    Lim inn verdiene i kolonne B, pass på at rett kommune får rett verdi
+
+  Velg farger
+    Fargerne oppdateres i J2 til J4/J6
+        Det er tallet i cellene som avgjør hvilken farge som kommer ut. Fargene i cellen er kun visuelt, men har ingen påvirkning på hvilke farger som kommer på kartet.
+    I kolonne T til X finner du forhåndsdefinerte sett med fargekoder
+        Kopier fargekoden og lim inn i J kolonnen
+    Ønskes andre fargekoder finner du dem under fanen "Farger.
+
+  Oppdater grenseverdiene
+    Grenseverdiene i I3 til I4/I6 er viser verdien til når man bytter til neste farge.
+        F.eks. hvis det står 20 i I3 så vil verdier under 20 bli satt til fargekoden i J2, mens verdier over vil bli satt til fargekoden i J3
+
+  Endre tekst
+      K11  -  endrer teksten på grenseverdine som blir presentert på lysbildet
+      K10  -  legger til/fjerner om det er prosent
+      N9   -  endrer overskriften
+      N10  -  endrer publiseringsdato
+      N11  -  endrer kilde
+      N12  -  endrer informasjon om nasjonale tall
+      (N13  -  Ikke rør dette feltet, legger inn en ekstra tekst om skjerming av tall hvis noen tall er skjermet (dvs har en "*" i b kolonnen))
+--------------------------------------------------------------------------------------------------------------
+Lag kartet
+  Vær sikker på du har både PowerPointen og excelfilen oppe.
+    For ordens skyld kan det være lurt å lukke andre PowerPoint presentasjoner for å unngå å oppdatere feil fil.
+    Trykk kjør macro
+  
