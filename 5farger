@@ -1,0 +1,29 @@
+Sub kjør_5farger()
+Dim npp As PowerPoint.Application
+Set npp = CreateObject("Powerpoint.application")
+
+Set md = npp.activepresentation.Slides(1)
+For i = 2 To 56
+
+
+
+md.Shapes(Cells(i, 7)).Fill.ForeColor.RGB = RGB(Cells(i, 4), Cells(i, 5), Cells(i, 6))
+
+Next i
+md.Shapes(347).TextFrame.TextRange.Text = "Tall per: " & Cells(10, 14).Value
+md.Shapes(348).TextFrame.TextRange.Text = "Kilde: " & Cells(11, 14).Value
+
+md.Shapes(349).TextFrame.TextRange.Text = Cells(9, 14).Value
+md.Shapes(350).TextFrame.TextRange.Text = Cells(12, 14).Value
+
+'forklaringsbokser
+For i = 2 To 6
+md.Shapes(349 + i).TextFrame.TextRange.Text = Cells(i, 11).Value
+md.Shapes(349 + i).Fill.ForeColor.RGB = RGB(Cells(i, 16), Cells(i, 17), Cells(i, 18))
+Next i
+
+End Sub
+
+Private Sub CommandButton1_Click()
+kjør_5farger
+End Sub
