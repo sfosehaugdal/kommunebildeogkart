@@ -1,0 +1,47 @@
+Sub kjør_3farger_fylke()
+Dim npp As PowerPoint.Application
+Set npp = CreateObject("Powerpoint.application")
+
+Set md = npp.activepresentation.Slides(1)
+For i = 6 To 60
+
+
+
+md.Shapes(Cells(i, 7)).Fill.ForeColor.RGB = RGB(Cells(i, 4), Cells(i, 5), Cells(i, 6))
+
+Next i
+md.Shapes(347).TextFrame.TextRange.Text = "Tall per: " & Cells(10, 14).Value
+md.Shapes(348).TextFrame.TextRange.Text = "Kilde: " & Cells(11, 14).Value
+
+md.Shapes(349).TextFrame.TextRange.Text = Cells(9, 14).Value
+md.Shapes(350).TextFrame.TextRange.Text = Cells(12, 14).Value
+md.Shapes(356).TextFrame.TextRange.Text = Cells(13, 14).Value
+
+'forklaringsbokser
+For i = 2 To 4
+md.Shapes(349 + i).TextFrame.TextRange.Text = Cells(i, 11).Value
+md.Shapes(349 + i).Fill.ForeColor.RGB = RGB(Cells(i, 16), Cells(i, 17), Cells(i, 18))
+Next i
+
+md.Shapes(354).TextFrame.TextRange.Text = ""
+md.Shapes(354).Fill.ForeColor.RGB = RGB(255, 255, 255)
+md.Shapes(355).TextFrame.TextRange.Text = ""
+md.Shapes(355).Fill.ForeColor.RGB = RGB(255, 255, 255)
+
+End Sub
+
+Private Sub CommandButton1_Click()
+kjør_3farger_fylke
+End Sub
+
+Sub test()
+Dim npp As PowerPoint.Application
+Set npp = CreateObject("Powerpoint.application")
+
+Set md = npp.activepresentation.Slides(1)
+
+md.Shapes(56).Fill.ForeColor.RGB = RGB((Cells(2, 10).Interior.Color Mod 256), ((Cells(2, 10).Interior.Color \ 256) Mod 256), (Cells(2, 10).Interior.Color \ 65536))
+
+MsgBox Cells(2, 10).Interior.Color
+
+End Sub
