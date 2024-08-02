@@ -1,0 +1,376 @@
+Første versjon		-	EITHA/01.08.2024  -  1.0
+Siste versjon		-	EITHA/02.08.2024  -  1.0
+------------------------------------------------------
+Dette filen inneholder informasjon om hvordan kommunebildene og overordnede tall fungerer.
+
+Filene ligger på teamsrommet, "SFOS-Office 365 supergruppen" under filer gå til Dokumenter>General>Kommunebilder.
+
+Dette systemet funker med at det er et hovedark "Automatisering.xlsx" som henter data fra forskjellige underark, for å lage to databaser. Disse databasene ligger i fanen "Beskrivelse", "Til fletting" og "Overordnede tall", i tileegg så er det noen fliker med grafiske tabeller.
+Ikke rediger filene uten tillatelse fra Eirik.
+
+Fanen "Til fletting" er koblet til til filen "Forslag til tabell - kommunebilde.docx", og noe av dataen er koblet til fanen "Overordnede tall"
+
+Noe av dataene i bakgrunnstabellene er skjermet. Tallene kan derfor kun brukes internt og kan ikke gis ut til offentligheten.
+
+------------------------------------------------------
+Produsere et kommunebilde
+
+			Åpne filen "Forslag til tabell - kommunebilde.docx"
+			Trykk "Ja" på at du stoler på innholdet i filen
+			Trykk "Ja" på at det kan kjøres SQLkommoandoer
+			På fanen på toppen, gå til masseutsendelser
+			Pass på at "Forhåndsvis resulateter" er på
+			Bruk pilene til å bla frem og tilbake til du finner kommunen du ønsker
+			Trykk på "Fullfør og slå sammen"
+			Velg gjeldende post - det vil åpne seg et nytt dokument.
+			Lagre dokumentet der du ønsker.
+
+Merk: ikke alle tall ligger i databasen, per dags dato er arbeidsfordelingen slik at Eirik oppdaterer tallene og produserer dokumentet og at Kjell-Olaf m.f. fyller inn resten av tallene/informasjonen.
+------------------------------------------------------
+Oppdatere overordnede tall
+			Gjelder for Kakediagrammer, stolpediagrammer, og linjediagrammer. Gjelder IKKE for kart, se egen bruksanvisning for kart
+			Åpne "Automatisering.xlxs
+			Åpne filen "Overordnede tall.pptx"			
+				Denne filen ligger i teamet SFOS-Avdeling barnehage og utdanning->Dokumenter>General>Statistikk og analyse
+			Slett det aktuelle bildet fra PowerPointen
+			Høyreklikk på det aktuelle bildet i excel
+				Kopier
+			Høyreklikk på lysbildet i powerpoint
+				Under alternativer for innliming velg 
+				Behold kildeformartering og bygg inn arbeidsbok
+			Gjenta for alle bilder som trengs å oppdatere
+-------------------------------------------------------
+Hvordan oppdatere bakgrunnstall
+-------------------------------------------------------
+	BARNEHAGE
+		Barnehager.xlsx
+			Slett all datarader fra filen
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-barnehage/antall-barnehager/
+			Pass på at du kun tar ut tall for siste år
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		Dispenasjoner.xlsx
+			Slett all datarader fra filen
+				Pass på å ikke slette innholdet i kolonne M, denne brukes for beregninger
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-barnehage/dispensasjoner-i-barnehage2/
+			Pass på at du kun tar ut tall for siste år
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		Kostrabhg.xlsx
+			Slett all datarader fra filen
+			Gå til https://www.ssb.no/statbank/table/13502/
+			Under statistikkvariabel velg "Netto driftsutgifter barnehager i prosent av kommunens totale netto driftsutgifter (prosent) og "Netto driftsutgifter barnehager, per innbygger 1-5 år  (kr)"
+			Under år velg de to siste årgangene
+			Under region velg
+			Trykk "vis tabell"
+			Trykk "Excel (xlsx)
+			Når du har åpnet filen må du skille kommune-/fylkesnummer/kostragruppe fra navnet.
+				Høyreklikk på kolonne B
+				Trykk sett inn
+				Marker A5 og nedover
+				I menyen øverst gå til Data->Tekst til kolonner
+				Velg data med fast bredde
+				Pass på at bredden er 4 (standard)
+				Trykk ok
+			Kopier ut tabellen (ta med årstall)
+			Lim inn tabellen i A4
+			Gjenta for kommune/fylke/kostragruppe/landet i de forskjellige fanene
+		Minorietetspråklige barn.xlsx
+			NB: KREVER INNLOGGING
+			Slett all datarader fra filen
+				Pass på å ikke slette innholdet i celle P2, denne brukes for beregninger
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-barnehage/minoritetsspraklige-barn-i-barnehage/
+			Pass på at du kun tar ut tall for siste år "Kommuner 2020", "Fylker 2020", "KOSTRA-grupper", eller "Landet"
+			Velg så alle alterantivene i listen  som dukker opp under region (trykk inn i listen og så trykk CTRL+A)
+			Trykk Vis tabell
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		Oversikt antall barn.xlsx
+	
+		Pedagognormen.xlsx
+			Slett all datarader fra filen
+				Pass på å ikke slette innholdet i kolonne N og O, samt celle Q2 og S2 disse brukes for beregninger
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-barnehage/pedagognormen/
+			Pass på at du kun tar ut tall for siste år
+				Under måltall velg "Antall barnehager", "Oppfyller pedagognormen (antall)", "Oppfyller ikke pedagognormen (antall)", "Oppfyller pedagognormen med disp. (antall)"
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		Spesialpedagogisk hjelp.xlsx
+			NB: KREVER INNLOGGING
+			Slett all datarader fra filen
+				Pass på å ikke slette innholdet i kolonne N og celle P2 disse brukes for beregninger
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-barnehage/barn-med-spesialpedagogisk-hjelp/
+			Pass på at du kun tar ut tall for siste år
+				Under spørsmål velg "Spesialpedagogisk hjelp", og "Antall barn"
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		Utdanning BHG.xlsx
+			Slett all datarader fra filen
+				Pass på å ikke slette innholdet i celle P2 disse brukes for beregninger
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-barnehage/antall-ansatte-utdanning/
+			Pass på at du kun tar ut tall for siste år
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+------------------------------------------------------------------------------------------------------
+	Grunnskole
+		Spesialpedagogisk hjelp.xlsx
+			NB: KREVER INNLOGGING
+			Slett all datarader fra filen
+				Pass på å ikke slette innholdet i kolonne AJ til AR disse brukes for beregninger
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/tall-om-elever-og-skoler/
+			Pass på at du kun tar ut tall for siste år	
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		Grunnskolepoeng.xlsx
+			NB: KREVER INNLOGGING
+			Slett all datarader fra filen
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/grunnskolepoeng/
+			Pass på at du kun tar ut tall for siste år	
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		Gruppestørrelse 2.xlsx
+			NB: KREVER INNLOGGING
+			NB: DETTE FUNKER IKKE FOR Å GENERERE TALL FOR LANDSGJENNOMSNITTET. GÅ INN PÅ UDIRS ARTIKKEL OG FINN TALLENE FOR LANDET DER OG OPDPATERT TALLENE I 
+			Pass på slette data fra A7-L7 og nedover
+				Ikke rør noe i kolonne M-R
+			Gå til https://gsi.udir.no/tallene/
+				Pass på at du står under "Grunnskole" øverst til venstre
+				Pass på at du står under "Alle offentlige uten kommunen sentralt" øverst til venstre
+				Trykk på "Rapport"
+				Pass på at du tar ut tall for siste publiserte årgang, i noen tilfeller ligger det testtall eller innsamlingstall i der.
+				Under "Enheter" velg "Østfold", "Buskerud", "Oslo" og "Akershus"
+				Under nivå velg "Skole/enhet"
+				Velg følgende tittel/felt
+					Fylke						-			u1
+					Fylke						-			eu1
+					Kommune						-			u2
+					Kommune						-			eu2
+				I dropdown menyen, velg "Rapportkalkuleringer" og velg følgende tittel/felt
+					Gruppestørrelse 2 teller, 1.-4. trinn		-			c461
+					Gruppestørrelse 2 teller, 5.-7. trinn		-			c471
+					Gruppestørrelse 2 teller, 8.-10. trinn		-			c472
+					Gruppestørrelse 2 teller, 1.-4. trinn		-			c166
+					Gruppestørrelse 2 teller, 5.-7. trinn		-			c164
+					Gruppestørrelse 2 teller, 8.-10. trinn		-			c165
+			Trykk på Visning
+			Trykk Excel
+			Kopier dataen eksporten
+			Lim inn i A7
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+			Pass på at innholdet i kolonne C og kolonne F er formatert som tall (hvis de har et grønt merke på seg er de formartert som tekst)
+				For å konvertere fra tall til tekst kan du gå til celle S7 og lime inn følgende
+				=C7:E7+0
+					Kopier raden nedover for å dekke alle skolene.
+					Merk verdiene i kolonne S og kopier dem
+					Høyreklikk i celle C7
+					Under alternativ for innliming velg "Verdier (V)"
+		Kompetanse.xlsx
+			NB: KREVER INNLOGGING
+			Pass på slette data fra A7 til P7 og nedover
+			Gå til https://gsi.udir.no/tallene/
+				Pass på at du står under "Grunnskole" øverst til venstre
+				Pass på at du står under "Alle enheter" øverst til venstre
+				Trykk på "Rapport"
+				Pass på at du tar ut tall for siste publiserte årgang, i noen tilfeller ligger det testtall eller innsamlingstall i der.
+				Under "Enheter" velg Hele landet"
+				Under nivå velg "Kommune", velg vekk andre alternativer
+				Velg følgende tittel/felt/beskrivelse
+					Fylke						-			u1
+					Kommune						-			u2
+					Norsk						-			d891				-		Minst 30 studiepoeng i faget
+					Norsk						-			d893				-		Sum lærere som underviser i faget, 1.-7. årstrinn
+					Norsk						-			d894				-		Minst 60<br>studie-<br>poeng<br> i faget
+					Norsk						-			d1486				-		Sum lærere som underviser i faget, 8.-10. årstrinn
+					Matematikk					-			d1501				-		Minst 30 studiepoeng i faget
+					Matematikk					-			d1503				-		Sum lærere som underviser i faget, 1.-7. årstrinn
+					Matematikk					-			d1504				-		Minst 60<br>studie-<br>poeng<br> i faget
+					Matematikk					-			d1507				-		Sum lærere som underviser i faget, 8.-10. årstrinn
+					Engelsk						-			d1508				-		Minst 30 studiepoeng i faget
+					Engelsk						-			d1510				-		Sum lærere som underviser i faget, 1.-7. årstrinn
+					Engelsk						-			d1511				-		Minst 60<br>studie-<br>poeng<br> i faget
+					Engelsk						-			d1514				-		Sum lærere som underviser i faget, 8.-10. årstrinn
+			Trykk på Visning
+			Trykk Excel
+			Kopier dataen eksporten
+			Lim inn i A7
+				Ikke gjør noe med fanene "Fylker", "Kommuner", eller nasjonalt
+		Kostrags.xlsx
+			Slett all datarader fra filen
+			Gå til https://www.ssb.no/statbank/table/12255/
+			Under statistikkvariabel velg "Netto driftsutgifter grunnskolesektor (202, 215, 222, 223), i prosent av samlede netto driftsutgifter (prosent)" og "Netto driftsutgifter til grunnskolesektor (202, 215, 222, 223), per innbygger 6-15 år (kr)"
+			Under år velg de to siste årgangene
+			Under region velg
+			Trykk "vis tabell"
+			Trykk "Excel (xlsx)
+			Når du har åpnet filen må du skille kommune-/fylkesnummer/kostragruppe fra navnet.
+				Høyreklikk på kolonne B
+				Trykk sett inn
+				Marker A5 og nedover
+				I menyen øverst gå til Data->Tekst til kolonner
+				Velg data med fast bredde
+				Pass på at bredden er 4 (standard)
+				Trykk ok
+			Kopier ut tabellen (ta med årstall)
+			Lim inn tabellen i A4
+			Gjenta for kommune/fylke/kostragruppe/landet i de forskjellige fanene
+		Kulturskole.xlsx
+			NB: KREVER INNLOGGING
+			Pass på slette data fra A7 til P7 og nedover
+			Gå til https://gsi.udir.no/tallene/
+				Pass på at du står under "Kulturskole" øverst til venstre
+				Pass på at du står under "Alle enheter" øverst til venstre
+				Trykk på "Rapport"
+				Pass på at du tar ut tall for siste publiserte årgang, i noen tilfeller ligger det testtall eller innsamlingstall i der.
+				Under "Enheter" velg Hele landet"
+				Under nivå velg "Kommune", velg vekk andre alternativer
+				Velg følgende tittel/felt/beskrivelse
+					Fylke						-			u1
+					Kommune						-			u2
+					Elever ved skolen				-			d7				-		Elever ved skolen
+			Trykk på Visning
+			Trykk Excel
+			Kopier dataen eksporten
+			Lim inn i A7
+				Ikke gjør noe med fanene "Fylker", "Kommuner", eller nasjonalt
+		MobbingGSK.xlsx
+		MobbingovertidGSK.xlsx
+		NP5.xlsx
+			NB: KREVER INNLOGGING
+			Slett all datarader fra filen
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/nasjonale-prover-5.-trinn/
+			Pass på at du kun tar ut tall for siste år
+			Velg "Vis mestringsnivåfordeling"
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		NP9.xlsx
+			NB: KREVER INNLOGGING
+			Slett all datarader fra filen
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/nasjonale-prover-5.-trinn/
+			Pass på at du kun tar ut tall for siste år
+			Velg "Vis mestringsnivåfordeling"
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		Trivsel.xlsx
+			NB: KREVER INNLOGGING
+			Slett all datarader fra filen
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/elevundersokelsen-laringsmiljo-5-til-10-trinn-fylker-og-skoler/
+			Pass på at du kun tar ut tall for siste år
+			Fjern antall besvart
+			Velg "Vis mestringsnivåfordeling"
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		UtdanningGSK.xlsx
+			NB: KREVER INNLOGGING
+			Pass på slette data fra A7 til F7 og nedover
+			Gå til https://gsi.udir.no/tallene/
+				Pass på at du står under "Grunnskole" øverst til venstre
+				Pass på at du står under "Alle enheter" øverst til venstre
+				Trykk på "Rapport"
+				Pass på at du tar ut tall for siste publiserte årgang, i noen tilfeller ligger det testtall eller innsamlingstall i der.
+				Under "Enheter" velg Hele landet"
+				Under nivå velg "Kommune", velg vekk andre alternativer
+				Velg følgende tittel/felt/beskrivelse
+					Fylke									-			u1
+					Kommune									-			u2
+					Antall lærere								-			d257				-		Sum
+					Antall lærere som ikke oppfyller kompetanskravene for tilsetting	-			d890				-		Sum 1.-10. årstrinn
+		VoksenopplæringGSK.xlsx
+			NB: KREVER INNLOGGING
+			Pass på slette data fra A7 til P7 og nedover
+			Gå til https://gsi.udir.no/tallene/
+				Pass på at du står under "Voksenopplæring" øverst til venstre
+				Pass på at du står under "Alle enheter" øverst til venstre
+				Trykk på "Rapport"
+				Pass på at du tar ut tall for siste publiserte årgang, i noen tilfeller ligger det testtall eller innsamlingstall i der.
+				Under "Enheter" velg Hele landet"
+				Under nivå velg "Kommune", velg vekk andre alternativer
+				Velg følgende tittel/felt/beskrivelse
+					Fylke										-			u1
+					Kommune										-			u2
+					Sum antall deltakere på grunnskolens område (linje 3+7+11)			-			d331			-		sum
+			Trykk på Visning
+			Trykk Excel
+			Kopier dataen eksporten
+			Lim inn i A7
+				Ikke gjør noe med fanene "Fylker", "Kommuner"
+------------------------------------------------------------------------------------------------------
+	Kommuneinfo
+------------------------------------------------------------------------------------------------------
+	VGO
+		EleverVGO
+			NB: KREVER AT DU IKKE ER INNLOGGET, HVIS DU ER INNLOGGET MÅ DU FJERNE NOEN KOLONNER SOM VISER PRIKKING
+			Slett all datarader fra filen
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-videregaende-skole/elevtall-i-videregaende-skole/elevtall-fylker-og-skoler/
+			Pass på at du kun tar ut tall for siste år
+			Pass på at du under eierform velger alle eierformene
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		Gjennomføring.xlsx
+			NB: KREVER AT DU IKKE ER INNLOGGET, HVIS DU ER INNLOGGET MÅ DU FJERNE NOEN KOLONNER SOM VISER PRIKKING
+			Slett all datarader fra filen
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-videregaende-skole/tall-for-gjennomforing-av-videregaende-opplaring/gjennomforing-av-videregaende-opplaring--sortert-etter-fylke/
+			Pass på at du kun tar ut tall for siste år
+			Pass på at du gjennomføringstatus velger "Fullført innen to år etter normert tid", og ingen andre statuser
+			Pass på at du nederst i menyen huker av for "Vis antall bak gjennomføringstatus" og "Vis antall elever i kullet"
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		Lærekontrakter.xlsx
+			NB: KREVER AT DU IKKE ER INNLOGGET, HVIS DU ER INNLOGGET MÅ DU FJERNE NOEN KOLONNER SOM VISER PRIKKING
+			Slett all datarader fra filen
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-fag-og-yrkesopplaring/antall-larlinger/larekontrakter-fylker-og-ar/
+			Pass på at du kun tar ut tall for siste år
+				Lærekontrakter
+					Under kontraktstype, trykk på Læreling og fagopplæring i skole->lærekontrakter
+					Trykk eksporter
+					Kopier dataen eksporten
+					Lim inn i fanen "Lærekontrakt" i celle A1
+				Fagopplæring i skole
+					Under kontraktstype, trykk på Læreling og fagopplæring i skole->lærekontrakter
+					Trykk eksporter
+					Kopier dataen eksporten
+					Lim inn i fanen "Fagopplæringiskole" i celle A1
+			Ikke gjør noe med fanene "Beregninger"
+		Mobbing over tid vg1.xlsx
+		Mobbing.xlsx
+		Ungdom utenfor og uten videregående opplæring og uten jobb.xlsx
+			NB: DENNE ER MER KREVENDE ENN DE ANDRE DA DEN FYLKENE ER FEM/SEKS ÅR "FORSINKET"
+			Slett data i F2 til J6
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-videregaende-skole/ungdom-uten-og-utenfor-vgo/
+			Pass på at tar ut tall for de fem siste årene
+			Pass på at du under arbeidsmarkedsstatus velger kun "Ikke i arbeid", og ingen andre statuser
+			Trykk eksporter
+				Kopier dataen for hvert fylke og lim inn i F2 til F6 basert på fylke, inkludert Viken.
+				Hvis det ikke finnes tall for Akershus, Buskerud eller Østfold, referer til cellen fra Viken og sørg for at at fylket er markert med *
+		VoksneVGO
+			Slett all datarader fra filen, ikke rør celle H26
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-videregaende-skole/elevtall-i-videregaende-skole/elevtall-fylker-og-skoler/
+			Pass på at du kun tar ut tall for siste år
+			Pass på at du under eierform velger alle eierformene
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
