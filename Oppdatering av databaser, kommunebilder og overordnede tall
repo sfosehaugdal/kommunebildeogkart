@@ -1,5 +1,5 @@
 Første versjon		-	EITHA/01.08.2024  -  0.9
-Siste versjon		-	EITHA/02.08.2024  -  0.9
+Siste versjon		-	EITHA/02.08.2024  -  0.9.1
 ------------------------------------------------------
 Dette filen inneholder informasjon om hvordan kommunebildene og overordnede tall fungerer.
 
@@ -91,7 +91,30 @@ Hvordan oppdatere bakgrunnstall
 			Lim inn i A1
 				Ikke gjør noe med fanene "Fylker" og "Kommuner"
 		Oversikt antall barn.xlsx
-			Denne må bearbeides før neste publisering uansett, derav ingen dokumentasjon.
+			NB: KREVER INNLOGGING
+			Gå til https://basilrapport.udir.no/
+			Trykk på "Endre utvalg"
+				Trykk på "Legg til flere utvalg"
+				Enkeltvis kryss av for alle kommunene
+				Trykk opprett utvalg
+				Trykk oppdater
+			Velg "Oversikt over antall barn"
+			Trykk på "Export/utskrift"
+				Velg excel
+				Før du åpner filen må du kanskje gi den nytt navn, excel åpner ikke filer med samme navn
+				Kopier A1 til BC87
+				Lim inn i A1
+			Velg "Barn med nedsatt funksjonsevne og spesialpedagogisk hjelp"
+			Trykk på "Export/utskrift"
+				Velg excel
+				Kopier A58 til B79
+				Lim inn i A89
+			Velg "Barn med nedsatt funksjonsevne og spesialpedagogisk hjelp"
+			Trykk på "Export/utskrift"
+				Velg excel
+				Kopier A58 til B74
+				Lim inn i A112
+			Ikke gjør noe med fanene "Beregninger"
 		Pedagognormen.xlsx
 			Slett all datarader fra filen
 				Pass på å ikke slette innholdet i kolonne N og O, samt celle Q2 og S2 disse brukes for beregninger
@@ -379,3 +402,4 @@ Hvordan oppdatere bakgrunnstall
 Versjonslogg
 ------------------------------------------------------------------------------------------------------
 0.9 Førsteutkast, noen mangler på noen excelark fortsatt
+0.9.1 Lagt til informasjon om filen "Oversikt antall barn"
