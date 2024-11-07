@@ -3,7 +3,7 @@ Siste versjon		-	EITHA/07.11.2024  -  0.9.2
 ------------------------------------------------------
 Dette filen inneholder informasjon om hvordan kommunebildene og overordnede tall fungerer.
 
-Filene ligger på teamsrommet, "SFOS-Office 365 supergruppen" under filer gå til Dokumenter>General>Kommunebilder.
+Filene ligger på teamsrommet, "SFOS-Statistikkgruppen" under filer gå til Dokumenter>General>Kommunebilder.
 
 Dette systemet funker med at det er et hovedark "Automatisering.xlsx" som henter data fra forskjellige underark, for å lage to databaser. Disse databasene ligger i fanen "Beskrivelse", "Til fletting" og "Overordnede tall", i tileegg så er det noen fliker med grafiske tabeller.
 Ikke rediger filene uten tillatelse fra Eirik.
@@ -410,4 +410,4 @@ Versjonslogg
 ------------------------------------------------------------------------------------------------------
 0.9 Førsteutkast, noen mangler på noen excelark fortsatt
 0.9.1 Lagt til informasjon om filen "Oversikt antall barn"
-0.9.2 Lagt til hvordan man oppdatererer PPTene
+0.9.2 Lagt til hvordan man oppdatererer PPTene og oppdatert hvor man finner filene
