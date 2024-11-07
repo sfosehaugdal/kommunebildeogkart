@@ -1,5 +1,5 @@
 Første versjon		-	EITHA/01.08.2024  -  0.9
-Siste versjon		-	EITHA/02.08.2024  -  0.9.1
+Siste versjon		-	EITHA/07.11.2024  -  0.9.2
 ------------------------------------------------------
 Dette filen inneholder informasjon om hvordan kommunebildene og overordnede tall fungerer.
 
@@ -10,6 +10,13 @@ Ikke rediger filene uten tillatelse fra Eirik.
 
 Fanen "Til fletting" er koblet til til filen "Forslag til tabell - kommunebilde.docx", og noe av dataen er koblet til fanen "Overordnede tall"
 
+Når du ønsker å oppdatere PowerPointene (utenom kart)
+	Oppdater dataene
+	Åpne filen som heter Automatisering
+	Åpne filen overordnede tall
+	Finn bildet du ønsker å oppdatere, og trykk på bildet
+	På øverste menyen, trykk diagramutforming
+	Trykk oppdater data
 Noe av dataene i bakgrunnstabellene er skjermet. Tallene kan derfor kun brukes internt og kan ikke gis ut til offentligheten.
 
 ------------------------------------------------------
@@ -403,3 +410,4 @@ Versjonslogg
 ------------------------------------------------------------------------------------------------------
 0.9 Førsteutkast, noen mangler på noen excelark fortsatt
 0.9.1 Lagt til informasjon om filen "Oversikt antall barn"
+0.9.2 Lagt til hvordan man oppdatererer PPTene
