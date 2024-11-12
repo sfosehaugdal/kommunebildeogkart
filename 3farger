@@ -15,6 +15,7 @@ md.Shapes(348).TextFrame.TextRange.Text = "Kilde: " & Cells(11, 14).Value
 
 md.Shapes(349).TextFrame.TextRange.Text = Cells(9, 14).Value
 md.Shapes(350).TextFrame.TextRange.Text = Cells(12, 14).Value
+md.Shapes(356).TextFrame.TextRange.Text = Cells(13, 14).Value
 
 'forklaringsbokser
 For i = 2 To 6
