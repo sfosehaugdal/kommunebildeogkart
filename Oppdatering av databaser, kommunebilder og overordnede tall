@@ -6,9 +6,11 @@ Dette filen inneholder informasjon om hvordan kommunebildene og overordnede tall
 Filene ligger på teamsrommet, "SFOS-Statistikkgruppen" under filer gå til Dokumenter>General>Kommunebilder.
 
 Dette systemet funker med at det er et hovedark "Automatisering.xlsx" som henter data fra forskjellige underark, for å lage to databaser. Disse databasene ligger i fanen "Beskrivelse", "Til fletting" og "Overordnede tall", i tileegg så er det noen fliker med grafiske tabeller.
-Ikke rediger filene uten tillatelse fra Eirik.
+Ikke rediger filene uten tillatelse fra Eirik, eller du virkelig vet hva du gjør.
 
 Fanen "Til fletting" er koblet til til filen "Forslag til tabell - kommunebilde.docx", og noe av dataen er koblet til fanen "Overordnede tall"
+
+Dobbeltsjekk alltid at tallene oppdaterer seg (i tilfelle lenkebrudd), husk også å oppdatere kommunebildet med siste årgang.
 
 Når du ønsker å oppdatere PowerPointene (utenom kart)
 	Oppdater dataene
