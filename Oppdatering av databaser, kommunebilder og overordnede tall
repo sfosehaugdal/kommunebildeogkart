@@ -1,5 +1,5 @@
 Første versjon		-	EITHA/01.08.2024  -  0.9
-Siste versjon		-	EITHA/07.11.2024  -  0.9.2
+Siste versjon		-	EITHA/13.11.2024  -  0.9.3
 ------------------------------------------------------
 Dette filen inneholder informasjon om hvordan kommunebildene og overordnede tall fungerer.
 
@@ -414,3 +414,5 @@ Versjonslogg
 0.9 Førsteutkast, noen mangler på noen excelark fortsatt
 0.9.1 Lagt til informasjon om filen "Oversikt antall barn"
 0.9.2 Lagt til hvordan man oppdatererer PPTene og oppdatert hvor man finner filene
+0.9.3 Korrigert veiledningen for NP5 og NP9
+
