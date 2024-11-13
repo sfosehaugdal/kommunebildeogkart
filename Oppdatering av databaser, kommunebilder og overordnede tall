@@ -154,7 +154,7 @@ Hvordan oppdatere bakgrunnstall
 				Ikke gjør noe med fanene "Fylker" og "Kommuner"
 ------------------------------------------------------------------------------------------------------
 	Grunnskole
-		Spesialpedagogisk hjelp.xlsx
+		ITO.xlsx
 			NB: KREVER INNLOGGING
 			Slett all datarader fra filen
 				Pass på å ikke slette innholdet i kolonne AJ til AR disse brukes for beregninger
@@ -291,9 +291,10 @@ Hvordan oppdatere bakgrunnstall
 				Ikke gjør noe med fanene "Fylker" og "Kommuner"
 		NP9.xlsx
 			NB: KREVER INNLOGGING
-			Slett all datarader fra filen
-			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/nasjonale-prover-5.-trinn/
+			Slett all datarader fra fanen: Nasjonale prøver 9. trinn
+			https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/nasjonale-prover-8.-og-9.-trinn/
 			Pass på at du kun tar ut tall for siste år
+			Pass på at du under utvalg velger kun 9. trinn
 			Velg "Vis mestringsnivåfordeling"
 			Trykk eksporter
 			Kopier dataen eksporten
