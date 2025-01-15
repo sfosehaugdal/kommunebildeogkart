@@ -1,5 +1,5 @@
-Første versjon		-	EITHA/01.08.2024  -  0.9
-Siste versjon		-	EITHA/13.11.2024  -  0.9.3
+rFørste versjon		-	EITHA/01.08.2024  -  0.9
+Siste versjon		-	EITHA/15.01.2025  -  0.9.4a
 ------------------------------------------------------
 Dette filen inneholder informasjon om hvordan kommunebildene og overordnede tall fungerer.
 
@@ -156,6 +156,7 @@ Hvordan oppdatere bakgrunnstall
 				Ikke gjør noe med fanene "Fylker" og "Kommuner"
 ------------------------------------------------------------------------------------------------------
 	Grunnskole
+	Ved publisering av GSI
 		ITO.xlsx
 			NB: KREVER INNLOGGING
 			Slett all datarader fra filen
@@ -166,18 +167,29 @@ Hvordan oppdatere bakgrunnstall
 			Kopier dataen eksporten
 			Lim inn i A1
 				Ikke gjør noe med fanene "Fylker" og "Kommuner"
-		Grunnskolepoeng.xlsx
+		Kulturskole.xlsx
 			NB: KREVER INNLOGGING
-			Slett all datarader fra filen
-			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/grunnskolepoeng/
-			Pass på at du kun tar ut tall for siste år	
-			Trykk eksporter
+			Pass på slette data fra A7 til P7 og nedover
+			Gå til https://gsi.udir.no/tallene/
+				Pass på at du står under "Kulturskole" øverst til venstre
+				Pass på at du står under "Alle enheter" øverst til venstre
+				Trykk på "Rapport"
+				Pass på at du tar ut tall for siste publiserte årgang, i noen tilfeller ligger det testtall eller innsamlingstall i der.
+				Under "Enheter" velg Hele landet"
+				Under nivå velg "Kommune", velg vekk andre alternativer
+				Velg følgende tittel/felt/beskrivelse
+					Fylke						-			u1
+					Kommune						-			u2
+					Elever ved skolen				-			d7				-		Elever ved skolen
+			Trykk på Visning
+			Trykk Excel
 			Kopier dataen eksporten
-			Lim inn i A1
-				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+			Lim inn i A7
+				Ikke gjør noe med fanene "Fylker", "Kommuner", eller nasjonalt
 		Gruppestørrelse 2.xlsx
 			NB: KREVER INNLOGGING
 			NB: DETTE FUNKER IKKE FOR Å GENERERE TALL FOR LANDSGJENNOMSNITTET. GÅ INN PÅ UDIRS ARTIKKEL OG FINN TALLENE FOR LANDET DER OG OPDPATERT TALLENE I 
+			Gå til fanen: "Egendefinert", ikke rør de andre fanene.
 			Pass på slette data fra A7-L7 og nedover
 				Ikke rør noe i kolonne M-R
 			Gå til https://gsi.udir.no/tallene/
@@ -196,9 +208,9 @@ Hvordan oppdatere bakgrunnstall
 					Gruppestørrelse 2 teller, 1.-4. trinn		-			c461
 					Gruppestørrelse 2 teller, 5.-7. trinn		-			c471
 					Gruppestørrelse 2 teller, 8.-10. trinn		-			c472
-					Gruppestørrelse 2 teller, 1.-4. trinn		-			c166
-					Gruppestørrelse 2 teller, 5.-7. trinn		-			c164
-					Gruppestørrelse 2 teller, 8.-10. trinn		-			c165
+					Gruppestørrelse 2 nevner, 1.-4. trinn		-			c166
+					Gruppestørrelse 2 nevner, 5.-7. trinn		-			c164
+					Gruppestørrelse 2 nevner, 8.-10. trinn		-			c165
 			Trykk på Visning
 			Trykk Excel
 			Kopier dataen eksporten
@@ -207,12 +219,16 @@ Hvordan oppdatere bakgrunnstall
 			Pass på at innholdet i kolonne C og kolonne F er formatert som tall (hvis de har et grønt merke på seg er de formartert som tekst)
 				For å konvertere fra tall til tekst kan du gå til celle S7 og lime inn følgende
 				=C7:E7+0
-					Kopier raden nedover for å dekke alle skolene.
-					Merk verdiene i kolonne S og kopier dem
+					Kopier raden nedover for å dekke alle skolene ved å dobbeltklikke på den lille firkanten i høyre høyrne autofylle
+					Merk verdiene i kolonne S7 og ned og kopier dem
 					Høyreklikk i celle C7
+					Under alternativ for innliming velg "Verdier (V)"
+					Merk verdiene i kolonne U7 og ned og kopier dem
+					Høyreklikk i celle E7
 					Under alternativ for innliming velg "Verdier (V)"
 		Kompetanse.xlsx
 			NB: KREVER INNLOGGING
+			Gå til fanen: "Egendefinert", ikke rør de andre fanene.
 			Pass på slette data fra A7 til P7 og nedover
 			Gå til https://gsi.udir.no/tallene/
 				Pass på at du står under "Grunnskole" øverst til venstre
@@ -241,78 +257,6 @@ Hvordan oppdatere bakgrunnstall
 			Kopier dataen eksporten
 			Lim inn i A7
 				Ikke gjør noe med fanene "Fylker", "Kommuner", eller nasjonalt
-		Kostrags.xlsx
-			Slett all datarader fra filen
-			Gå til https://www.ssb.no/statbank/table/12255/
-			Under statistikkvariabel velg "Netto driftsutgifter grunnskolesektor (202, 215, 222, 223), i prosent av samlede netto driftsutgifter (prosent)" og "Netto driftsutgifter til grunnskolesektor (202, 215, 222, 223), per innbygger 6-15 år (kr)"
-			Under år velg de to siste årgangene
-			Under region velg
-			Trykk "vis tabell"
-			Trykk "Excel (xlsx)
-			Når du har åpnet filen må du skille kommune-/fylkesnummer/kostragruppe fra navnet.
-				Høyreklikk på kolonne B
-				Trykk sett inn
-				Marker A5 og nedover
-				I menyen øverst gå til Data->Tekst til kolonner
-				Velg data med fast bredde
-				Pass på at bredden er 4 (standard)
-				Trykk ok
-			Kopier ut tabellen (ta med årstall)
-			Lim inn tabellen i A4
-			Gjenta for kommune/fylke/kostragruppe/landet i de forskjellige fanene
-		Kulturskole.xlsx
-			NB: KREVER INNLOGGING
-			Pass på slette data fra A7 til P7 og nedover
-			Gå til https://gsi.udir.no/tallene/
-				Pass på at du står under "Kulturskole" øverst til venstre
-				Pass på at du står under "Alle enheter" øverst til venstre
-				Trykk på "Rapport"
-				Pass på at du tar ut tall for siste publiserte årgang, i noen tilfeller ligger det testtall eller innsamlingstall i der.
-				Under "Enheter" velg Hele landet"
-				Under nivå velg "Kommune", velg vekk andre alternativer
-				Velg følgende tittel/felt/beskrivelse
-					Fylke						-			u1
-					Kommune						-			u2
-					Elever ved skolen				-			d7				-		Elever ved skolen
-			Trykk på Visning
-			Trykk Excel
-			Kopier dataen eksporten
-			Lim inn i A7
-				Ikke gjør noe med fanene "Fylker", "Kommuner", eller nasjonalt
-		MobbingGSK.xlsx
-		MobbingovertidGSK.xlsx
-		NP5.xlsx
-			NB: KREVER INNLOGGING
-			Slett all datarader fra fanen: Nasjonale prøver 5. trinn
-			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/nasjonale-prover-5.-trinn/
-			Pass på at du kun tar ut tall for siste år
-			Velg "Vis mestringsnivåfordeling"
-			Trykk eksporter
-			Kopier dataen eksporten
-			Lim inn i A1
-				Ikke gjør noe med fanene "Fylker" og "Kommuner"
-		NP9.xlsx
-			NB: KREVER INNLOGGING
-			Slett all datarader fra fanen: Nasjonale prøver 9. trinn
-			https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/nasjonale-prover-8.-og-9.-trinn/
-			Pass på at du kun tar ut tall for siste år
-			Pass på at du under utvalg velger kun 9. trinn
-			Velg "Vis mestringsnivåfordeling"
-			Trykk eksporter
-			Kopier dataen eksporten
-			Lim inn i A1
-				Ikke gjør noe med fanene "Fylker" og "Kommuner"
-		Trivsel.xlsx
-			NB: KREVER INNLOGGING
-			Slett all datarader fra filen
-			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/elevundersokelsen-laringsmiljo-5-til-10-trinn-fylker-og-skoler/
-			Pass på at du kun tar ut tall for siste år
-			Fjern antall besvart
-			Velg "Vis mestringsnivåfordeling"
-			Trykk eksporter
-			Kopier dataen eksporten
-			Lim inn i A1
-				Ikke gjør noe med fanene "Fylker" og "Kommuner"
 		UtdanningGSK.xlsx
 			NB: KREVER INNLOGGING
 			Pass på slette data fra A7 til F7 og nedover
@@ -347,6 +291,75 @@ Hvordan oppdatere bakgrunnstall
 			Kopier dataen eksporten
 			Lim inn i A7
 				Ikke gjør noe med fanene "Fylker", "Kommuner"
+	Ved publisering av elevundersøkelsen
+
+		MobbingGSK.xlsx
+		MobbingovertidGSK.xlsx
+		NP5.xlsx
+			NB: KREVER INNLOGGING
+			Slett all datarader fra fanen: Nasjonale prøver 5. trinn
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/nasjonale-prover-5.-trinn/
+			Pass på at du kun tar ut tall for siste år
+			Velg "Vis mestringsnivåfordeling"
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		NP9.xlsx
+			NB: KREVER INNLOGGING
+			Slett all datarader fra fanen: Nasjonale prøver 9. trinn
+			https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/nasjonale-prover-8.-og-9.-trinn/
+			Pass på at du kun tar ut tall for siste år
+			Pass på at du under utvalg velger kun 9. trinn
+			Velg "Vis mestringsnivåfordeling"
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		Trivsel.xlsx
+			NB: KREVER INNLOGGING
+			Slett all datarader fra filen
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/elevundersokelsen-laringsmiljo-5-til-10-trinn-fylker-og-skoler/
+			Pass på at du kun tar ut tall for siste år
+			Fjern antall besvart
+			Velg "Vis mestringsnivåfordeling"
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+
+	Andre publiseringer
+		Grunnskolepoeng.xlsx
+			NB: KREVER INNLOGGING
+			
+			Slett all datarader fra filen
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/grunnskolepoeng/
+			Pass på at du kun tar ut tall for siste år	
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker" og "Kommuner"
+		Kostrags.xlsx
+			Slett all datarader fra filen
+			Gå til https://www.ssb.no/statbank/table/12255/
+			Under statistikkvariabel velg "Netto driftsutgifter grunnskolesektor (202, 215, 222, 223), i prosent av samlede netto driftsutgifter (prosent)" og "Netto driftsutgifter til grunnskolesektor (202, 215, 222, 223), per innbygger 6-15 år (kr)"
+			Under år velg de to siste årgangene
+			Under region velg
+			Trykk "vis tabell"
+			Trykk "Excel (xlsx)
+			Når du har åpnet filen må du skille kommune-/fylkesnummer/kostragruppe fra navnet.
+				Høyreklikk på kolonne B
+				Trykk sett inn
+				Marker A5 og nedover
+				I menyen øverst gå til Data->Tekst til kolonner
+				Velg data med fast bredde
+				Pass på at bredden er 4 (standard)
+				Trykk ok
+			Kopier ut tabellen (ta med årstall)
+			Lim inn tabellen i A4
+			Gjenta for kommune/fylke/kostragruppe/landet i de forskjellige fanene
+
+
 ------------------------------------------------------------------------------------------------------
 	Kommuneinfo
 ------------------------------------------------------------------------------------------------------
@@ -390,6 +403,15 @@ Hvordan oppdatere bakgrunnstall
 			Ikke gjør noe med fanene "Beregninger"
 		Mobbing over tid vg1.xlsx
 		Mobbing.xlsx
+			NB: KREVER AT DU IKKE ER INNLOGGET, HVIS DU ER INNLOGGET MÅ DU FJERNE NOEN KOLONNER SOM VISER PRIKKING
+				Under fanen mobbing
+				Slett all datarader fra filen
+				https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/elevundersokelsen-grunnskole-alle-resultater-fylker-og-skoler/
+				Ta vekk nivå 4
+				Kopier alt og lim in i A1
+			Under fanen deltakere fylker
+	NB: KREVER AT DU IKKE ER INNLOGGET, HVIS DU ER INNLOGGET MÅ DU FJERNE NOEN KOLONNER SOM VISER PRIKKING
+				Slett all datarader fra filen
 		Ungdom utenfor og uten videregående opplæring og uten jobb.xlsx
 			NB: DENNE ER MER KREVENDE ENN DE ANDRE DA DEN FYLKENE ER FEM/SEKS ÅR "FORSINKET"
 			Slett data i F2 til J6
@@ -415,4 +437,5 @@ Versjonslogg
 0.9.1 Lagt til informasjon om filen "Oversikt antall barn"
 0.9.2 Lagt til hvordan man oppdatererer PPTene og oppdatert hvor man finner filene
 0.9.3 Korrigert veiledningen for NP5 og NP9
+0.9.4a Oppdatert veiledning for gruppestørrelse 2, og noen andre av de andre GSIuttakene. Ikke helt ferdig med å oppdatere veiledning for mobbetallene.
 
