@@ -1,5 +1,5 @@
-rFørste versjon		-	EITHA/01.08.2024  -  0.9
-Siste versjon		-	EITHA/15.01.2025  -  0.9.4a
+Første versjon		-	EITHA/01.08.2024  -  0.9
+Siste versjon		-	EITHA/15.01.2025  -  0.9.5
 ------------------------------------------------------
 Dette filen inneholder informasjon om hvordan kommunebildene og overordnede tall fungerer.
 
@@ -99,33 +99,13 @@ Hvordan oppdatere bakgrunnstall
 			Kopier dataen eksporten
 			Lim inn i A1
 				Ikke gjør noe med fanene "Fylker" og "Kommuner"
-		Oversikt antall barn.xlsx
+		Nedsatt funksjonsevne.xlsx
 			NB: KREVER INNLOGGING
-			Gå til https://basilrapport.udir.no/
-			Trykk på "Endre utvalg"
-				Trykk på "Legg til flere utvalg"
-				Enkeltvis kryss av for alle kommunene
-				Trykk opprett utvalg
-				Trykk oppdater
-			Velg "Oversikt over antall barn"
-			Trykk på "Export/utskrift"
-				Velg excel
-				Før du åpner filen må du kanskje gi den nytt navn, excel åpner ikke filer med samme navn
-				Kopier A1 til BC87
-				Lim inn i A1
-			Velg "Barn med nedsatt funksjonsevne og spesialpedagogisk hjelp"
-			Trykk på "Export/utskrift"
-				Velg excel
-				Kopier A58 til B79
-				Lim inn i A89
-			Velg "Barn med nedsatt funksjonsevne og spesialpedagogisk hjelp"
-			Trykk på "Export/utskrift"
-				Velg excel
-				Kopier A58 til B74
-				Lim inn i A112
-			Ikke gjør noe med fanene "Beregninger"
-		Pedagognormen.xlsx
-			Slett all datarader fra filen
+			Logg inn i basil
+			Slett all datarader fra fanen Årsmelding svar
+			Gjør uttrek av alle dataen og lim den inn i A1 i fanen Årsmelding svar
+			Oppdater det nasjonale tallet manuelt (Celle H3 i fanen Fylke). Du kan trolig finne tallet i artikkelen til Udir. Hvis ikke må det nasjonale tallet etterspøres med å kontakte udir direkte.
+		Pedagognormen.xlsx			Slett all datarader fra filen
 				Pass på å ikke slette innholdet i kolonne N og O, samt celle Q2 og S2 disse brukes for beregninger
 			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-barnehage/pedagognormen/
 			Pass på at du kun tar ut tall for siste år
@@ -292,9 +272,56 @@ Hvordan oppdatere bakgrunnstall
 			Lim inn i A7
 				Ikke gjør noe med fanene "Fylker", "Kommuner"
 	Ved publisering av elevundersøkelsen
-
 		MobbingGSK.xlsx
+			NB: KREVER INNLOGGING
+			Slett all datarader fra fanen: Mobbing
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/elevundersokelsen--mobbing-5-til-10-trinn-sortert-etter-fylker-og-skoler/
+			Pass på at du kun tar ut tall for siste år
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker", "Kommuner" og "Beregning Oslo og Viken"
+			Slett all datarader fra fanen: Deltakere fylker
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/elevundersokelsen-deltakelse-5-10-trinn/
+			Pass på at du kun tar ut tall for siste år
+			Velg "Vis antall besvart"			
+			Trykk eksporter
+			Kopier dataen eksporten
+			Lim inn i A1
+				Ikke gjør noe med fanene "Fylker", "Kommuner" og "Beregning Oslo og Viken"
 		MobbingovertidGSK.xlsx
+			NB: KREVER INNLOGGING
+		
+			Slett all datarader fra fanen: 7. trinn
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/elevundersokelsen--mobbing-5-til-10-trinn-sortert-etter-fylker-og-skoler/
+			Gjør følgende valg:
+				Skoleår: 				De fem siste publiseringene
+				Trinn:					7. årstrinn
+				Spørsmål: 				Mobbing på skolen (Ingen underpunkter)
+				Vis antall mobbet:			Ja
+			Trykk eksporter
+				Slett alle kolonner som slutter på "Skjermet" eller "Brudd"
+			Kopier dataen eksporten
+			Lim inn i A1 i fanen 7. trinn
+		
+			Gjenta de forrige punktene bare i for 10. trinn i fanen "10. trinn"
+			
+			Slett all datarader fra fanen: Deltakere 7. trinn
+			Gå til https://www.udir.no/tall-og-forskning/statistikk/statistikk-grunnskole/elevundersokelsen-deltakelse-5-10-trinn/
+			Gjør følgende valg:
+				Skoleår: 				De fem siste publiseringene
+				Trinn:					7. årstrinn
+				Vis antall besvart:			Ja
+				Vis tall under publiseringsgrense:	Ja
+			Trykk eksporter
+				Slett alle kolonner som slutter på "Skjermet" eller "Brudd"
+			Kopier dataen eksporten
+			Lim inn i A1 i fanen Deltakere 7. trinn
+
+			Gjenta de forrige punktene bare i for 10. trinn i fanen "Deltakere 10. trinn"
+
+			Ikke gjør noe med fanene "Fylker 7. trinn" og "Fylker 10. trinn"
+
 		NP5.xlsx
 			NB: KREVER INNLOGGING
 			Slett all datarader fra fanen: Nasjonale prøver 5. trinn
@@ -437,5 +464,6 @@ Versjonslogg
 0.9.1 Lagt til informasjon om filen "Oversikt antall barn"
 0.9.2 Lagt til hvordan man oppdatererer PPTene og oppdatert hvor man finner filene
 0.9.3 Korrigert veiledningen for NP5 og NP9
-0.9.4a Oppdatert veiledning for gruppestørrelse 2, og noen andre av de andre GSIuttakene. Ikke helt ferdig med å oppdatere veiledning for mobbetallene.
+0.9.4 Oppdatert veiledning for gruppestørrelse 2, og noen andre av de andre GSIuttakene. Ikke helt ferdig med å oppdatere veiledning for mobbetallene.
+0.9.5 Oppdatert veiledning på mobbetallene, oppdatert med ny veiledning for barn med nedsatt funksjonsevne i tråd med ny Basil
 
